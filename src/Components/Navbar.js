@@ -5,8 +5,8 @@ export default function Navbar(props) {
   return (
     <div>
       <nav className={`navbar navbar-expand-lg bg-${props.mode}`}>
-        <div className="container-fluid">
-          <a style={{color:"white"}} className="navbar-brand" href="https://zororoot.github.io/React-bootstrap-TextUtills">
+        <div style={{color :props.mode==='dark'?'white':'#042743'}}className="container-fluid">
+          <a  className="navbar-brand" href="https://zororoot.github.io/React-bootstrap-TextUtills">
             {props.title}
           </a>
           <button
